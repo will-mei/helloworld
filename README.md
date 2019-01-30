@@ -112,21 +112,21 @@ Linux bash shell script note for beginers.
 > 任务重定向
 
 # 参考
-## 基本进程管理
+#### 基本进程管理
 >> 进程信息查询(ps/"/proc/")
 >>
 >> 进程strace
 >>
 >> linux信号
 
-## 基础服务配置
+#### 基础服务配置
 >> ssh服务配置
 >>
 >> sftp服务使用
 >>
 >> linux网络配置(ip/firewall)
 
-## 系统基础工具
+#### 系统基础工具
 >> 基础服务管理(systemd)
 >>
 >> 基本文件查找(find)
@@ -135,7 +135,7 @@ Linux bash shell script note for beginers.
 >>
 >> 其他常用工具
 
-## 用户终端交互
+#### 用户终端交互
 >> shell配置
 >>
 >> shell快捷键
@@ -146,6 +146,7 @@ Linux bash shell script note for beginers.
 >>
 >> tmux工具
 
-## vim配置
+#### vim配置
 >> vim基本配置
+>>
 >> vimplus
