@@ -1,5 +1,5 @@
 # ShellDaily
-Linux bash shell script note for beginers.
+Linux bash shell script note for beginers with basic knowledge and experience of Linux.
 
 # 目录
 
@@ -130,6 +130,8 @@ Linux bash shell script note for beginers.
 >> 基础服务管理(systemd)
 >>
 >> 基本文件查找(find)
+>>
+>> 文档归与备份
 >>
 >> lrzsz文件传输
 >>
