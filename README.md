@@ -111,7 +111,7 @@ Linux bash shell script note for beginers.
 >
 > 任务重定向
 
-# 参考
+# linux系统的初步使用参考
 #### 基本进程管理
 >> 进程信息查询(ps/"/proc/")
 >>
