@@ -113,7 +113,39 @@ Linux bash shell script note for beginers.
 
 # 参考
 ## 基本进程管理
+>> 进程信息查询(ps/"/proc/")
+>>
+>> 进程strace
+>>
+>> linux信号
+
 ## 基础服务配置
-## 基础系统工具
+>> ssh服务配置
+>>
+>> sftp服务使用
+>>
+>> linux网络配置(ip/firewall)
+
+## 系统基础工具
+>> 基础服务管理(systemd)
+>>
+>> 基本文件查找(find)
+>>
+>> lrzsz文件传输
+>>
+>> 其他常用工具
+
 ## 用户终端交互
+>> shell配置
+>>
+>> shell快捷键
+>>
+>> 终端设备与属性支持
+>>
+>> screen工具
+>>
+>> tmux工具
+
 ## vim配置
+>> vim基本配置
+>> vimplus
