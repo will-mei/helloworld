@@ -1,6 +1,8 @@
 # ShellDaily
 Linux bash shell script note for beginers with basic knowledge and experience of Linux.
 
+https://will-mei.github.io/shelldaily/
+
 # 目录
 
 ## 字符处理工具
