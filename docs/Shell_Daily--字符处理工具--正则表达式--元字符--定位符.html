@@ -1,0 +1,46 @@
+<!doctype html><html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>定位符</title>
+  <meta name="generator" content="CherryTree">
+  <link rel="stylesheet" href="styles.css" type="text/css" />
+</head>
+<body><div class="main"><div class="tree">
+<p><strong>Index</strong></p>
+<p><a href="Shell_Daily.html">Shell Daily</a></p>
+
+<ol>
+<li><a href="Shell_Daily--字符处理工具.html">字符处理工具</a></li>
+<ol>
+<li><a href="Shell_Daily--字符处理工具--基础概念.html">基础概念</a></li>
+<ol>
+<li><a href="Shell_Daily--字符处理工具--基础概念--字符编码与字符集.html">字符编码与字符集</a></li>
+<li><a href="Shell_Daily--字符处理工具--基础概念--行列与分隔符.html">行列与分隔符</a></li>
+<li><a href="Shell_Daily--字符处理工具--基础概念--模式匹配与流式处理.html">模式匹配与流式处理</a></li>
+</ol>
+<li><a href="Shell_Daily--字符处理工具--正则表达式.html">正则表达式</a></li>
+<ol>
+<li><a href="Shell_Daily--字符处理工具--正则表达式--命令中的正则表达式.html">命令中的正则表达式</a></li>
+<li><a href="Shell_Daily--字符处理工具--正则表达式--正则表达式分类.html">正则表达式分类</a></li>
+<li><a href="Shell_Daily--字符处理工具--正则表达式--元字符.html">元字符</a></li>
+<ol>
+<li><a href="Shell_Daily--字符处理工具--正则表达式--元字符--匹配字符.html">匹配字符</a></li>
+<li><a href="Shell_Daily--字符处理工具--正则表达式--元字符--限定符.html">限定符</a></li>
+<li><a href="Shell_Daily--字符处理工具--正则表达式--元字符--定位符.html">定位符</a></li>
+</ol>
+<li><a href="Shell_Daily--字符处理工具--正则表达式--普通字符.html">普通字符</a></li>
+<ol>
+<li><a href="Shell_Daily--字符处理工具--正则表达式--普通字符--非打印字符.html">非打印字符</a></li>
+<li><a href="Shell_Daily--字符处理工具--正则表达式--普通字符--字符簇.html">字符簇</a></li>
+</ol>
+<li><a href="Shell_Daily--字符处理工具--正则表达式--运算优先级.html">运算优先级</a></li>
+<li><a href="Shell_Daily--字符处理工具--正则表达式--常见正则表达式.html">常见正则表达式</a></li>
+</ol>
+<li><a href="Shell_Daily--字符处理工具--基础字符工具01_grep.html">基础字符工具01 grep</a></li>
+<li><a href="Shell_Daily--字符处理工具--基础字符工具02_sed.html">基础字符工具02 sed</a></li>
+<li><a href="Shell_Daily--字符处理工具--基础字符工具03_awk.html">基础字符工具03 awk</a></li>
+</ol>
+<li><a href="Shell_Daily--基础shell交互.html">基础shell交互</a></li>
+</ol></div>
+<div class="page"><h1><b><u>定位符</u></b></h1>定位符使您能够将正则表达式固定到行首或行尾。它们还使您能够创建这样的正则表达式，这些正则表达式出现在一个单词内、在一个单词的开头或者一个单词的结尾。<br /><br />定位符用来描述字符串或单词的边界，^ 和 $ 分别指字符串的开始与结束，\b 描述单词的前或后边界，\B 表示非单词边界。<br /><br />正则表达式的定位符有：<br /><table class="table"><col/><col/><tr><th>字符</th><th>描述</th></tr><tr><td>^</td><td>匹配输入字符串开始的位置。如果设置了 RegExp 对象的 Multiline 属性，^ 还会与 \n 或 \r 之后的位置匹配。</td></tr><tr><td>$</td><td>匹配输入字符串结尾的位置。如果设置了 RegExp 对象的 Multiline 属性，$ 还会与 \n 或 \r 之前的位置匹配。</td></tr><tr><td>\b</td><td>匹配一个单词边界，即字与空格间的位置。</td></tr><tr><td>\B</td><td>非单词边界匹配。</td></tr></table><br /><br />注意：不能将限定符与定位符一起使用。由于在紧靠换行或者单词边界的前面或后面不能有一个以上位置，因此不允许诸如 ^* 之类的表达式。<br /><br />若要匹配一行文本开始处的文本，请在正则表达式的开始使用 ^ 字符。不要将 ^ 的这种用法与中括号表达式内的用法混淆。<br /><br />若要匹配一行文本的结束处的文本，请在正则表达式的结束处使用 $ 字符。<br /></div></div>
+</body></html>

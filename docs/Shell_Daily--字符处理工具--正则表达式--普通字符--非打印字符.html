@@ -1,0 +1,46 @@
+<!doctype html><html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>非打印字符</title>
+  <meta name="generator" content="CherryTree">
+  <link rel="stylesheet" href="styles.css" type="text/css" />
+</head>
+<body><div class="main"><div class="tree">
+<p><strong>Index</strong></p>
+<p><a href="Shell_Daily.html">Shell Daily</a></p>
+
+<ol>
+<li><a href="Shell_Daily--字符处理工具.html">字符处理工具</a></li>
+<ol>
+<li><a href="Shell_Daily--字符处理工具--基础概念.html">基础概念</a></li>
+<ol>
+<li><a href="Shell_Daily--字符处理工具--基础概念--字符编码与字符集.html">字符编码与字符集</a></li>
+<li><a href="Shell_Daily--字符处理工具--基础概念--行列与分隔符.html">行列与分隔符</a></li>
+<li><a href="Shell_Daily--字符处理工具--基础概念--模式匹配与流式处理.html">模式匹配与流式处理</a></li>
+</ol>
+<li><a href="Shell_Daily--字符处理工具--正则表达式.html">正则表达式</a></li>
+<ol>
+<li><a href="Shell_Daily--字符处理工具--正则表达式--命令中的正则表达式.html">命令中的正则表达式</a></li>
+<li><a href="Shell_Daily--字符处理工具--正则表达式--正则表达式分类.html">正则表达式分类</a></li>
+<li><a href="Shell_Daily--字符处理工具--正则表达式--元字符.html">元字符</a></li>
+<ol>
+<li><a href="Shell_Daily--字符处理工具--正则表达式--元字符--匹配字符.html">匹配字符</a></li>
+<li><a href="Shell_Daily--字符处理工具--正则表达式--元字符--限定符.html">限定符</a></li>
+<li><a href="Shell_Daily--字符处理工具--正则表达式--元字符--定位符.html">定位符</a></li>
+</ol>
+<li><a href="Shell_Daily--字符处理工具--正则表达式--普通字符.html">普通字符</a></li>
+<ol>
+<li><a href="Shell_Daily--字符处理工具--正则表达式--普通字符--非打印字符.html">非打印字符</a></li>
+<li><a href="Shell_Daily--字符处理工具--正则表达式--普通字符--字符簇.html">字符簇</a></li>
+</ol>
+<li><a href="Shell_Daily--字符处理工具--正则表达式--运算优先级.html">运算优先级</a></li>
+<li><a href="Shell_Daily--字符处理工具--正则表达式--常见正则表达式.html">常见正则表达式</a></li>
+</ol>
+<li><a href="Shell_Daily--字符处理工具--基础字符工具01_grep.html">基础字符工具01 grep</a></li>
+<li><a href="Shell_Daily--字符处理工具--基础字符工具02_sed.html">基础字符工具02 sed</a></li>
+<li><a href="Shell_Daily--字符处理工具--基础字符工具03_awk.html">基础字符工具03 awk</a></li>
+</ol>
+<li><a href="Shell_Daily--基础shell交互.html">基础shell交互</a></li>
+</ol></div>
+<div class="page"><h1><b><u>非打印字符</u></b></h1>下表列出了表示非打印字符的转义序列：<br /><table class="table"><col/><col/><tr><th>字符</th><th>描述</th></tr><tr><td>\cx</td><td>匹配由x指明的控制字符。例如， \cM 匹配一个 Control-M 或回车符。x 的值必须为 A-Z 或 a-z 之一。否则，将 c 视为一个原义的 'c' 字符。</td></tr><tr><td>\f</td><td>匹配一个换页符。等价于 \x0c 和 \cL。</td></tr><tr><td>\n</td><td>匹配一个换行符。等价于 \x0a 和 \cJ。</td></tr><tr><td>\r</td><td>匹配一个回车符。等价于 \x0d 和 \cM。</td></tr><tr><td>\s</td><td>匹配任何空白字符，包括空格、制表符、换页符等等。等价于 [ \f\n\r\t\v]。注意 Unicode 正则表达式会匹配全角空格符。</td></tr><tr><td>\S</td><td>匹配任何非空白字符。等价于 [^ \f\n\r\t\v]。</td></tr><tr><td>\t</td><td>匹配一个制表符。等价于 \x09 和 \cI。</td></tr><tr><td>\v</td><td>匹配一个垂直制表符。等价于 \x0b 和 \cK。</td></tr></table><br /><br /></div></div>
+</body></html>
