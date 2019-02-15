@@ -1,7 +1,7 @@
 <!doctype html><html>
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <title>匹配字符</title>
+  <title>汉字的Unicode编码</title>
   <meta name="generator" content="CherryTree">
   <link rel="stylesheet" href="styles.css" type="text/css" />
 </head>
@@ -47,5 +47,5 @@
 </ol>
 <li><a href="Shell_Daily--基础shell交互.html">基础shell交互</a></li>
 </ol></div>
-<div class="page"><h1><b><u>匹配字符</u></b></h1>若要匹配这些特殊字符,必须首先使字符"转义",即,将反斜杠字符\ 放在它们前面。下表列出了正则表达式中的特殊字符：<strong><br /><br /></strong><table class="table"><col/><col/><tr><th>特别字符</th><th>描述</th></tr><tr><td>$</td><td>匹配输入字符串的结尾位置。如果设置了 RegExp 对象的 Multiline 属性，则 $ 也匹配 '\n' 或 '\r'。要匹配 $ 字符本身，请使用 \$。</td></tr><tr><td>( )</td><td>标记一个子表达式的开始和结束位置。子表达式可以获取供以后使用。要匹配这些字符，请使用 \( 和 \)。</td></tr><tr><td>*</td><td>匹配前面的子表达式零次或多次。要匹配 * 字符，请使用 \*。</td></tr><tr><td>+</td><td>匹配前面的子表达式一次或多次。要匹配 + 字符，请使用 \+。</td></tr><tr><td>.</td><td>匹配除换行符 \n 之外的任何单字符。要匹配 . ，请使用 \. 。</td></tr><tr><td>[</td><td>标记一个中括号表达式的开始。要匹配 [，请使用 \[。</td></tr><tr><td>?</td><td>匹配前面的子表达式零次或一次，或指明一个非贪婪限定符。要匹配 ? 字符，请使用 \?。</td></tr><tr><td>\</td><td>将下一个字符标记为或特殊字符、或原义字符、或向后引用、或八进制转义符。例如， 'n' 匹配字符 'n'。'\n' 匹配换行符。序列 '\\' 匹配 "\"，而 '\(' 则匹配 "("。</td></tr><tr><td>^</td><td>匹配输入字符串的开始位置，除非在方括号表达式中使用，此时它表示不接受该字符集合。要匹配 ^ 字符本身，请使用 \^。</td></tr><tr><td>{</td><td>标记限定符表达式的开始。要匹配 {，请使用 \{。</td></tr><tr><td>|</td><td>指明两项之间的一个选择。要匹配 |，请使用 \|。</td></tr></table><br /><br />*和+限定符都是贪婪的,因为它们会尽可能多的匹配文字,只有在它们的后面加上一个?就可以实现非贪婪或最小匹配。</div></div>
+<div class="page"><h1><b><u>汉字的Unicode编码</u></b></h1>关于日常使用的汉字,一般使用2w基本汉字就够了<br /><br />Unicode编码分布中,常用中文文字范围在 4E00-9FFF: 中日韩统一表意文字(其中尾部有部分空白码点,但是脚本中判断字符是否为中文的情况建议使用9FFF作为范围的结束点,因为该范围是相对完整的标准范围),如果是英文版查询结果则带有CJK(CJK = Chinese-Japanese-Korean)字样的说明信息,通常很多中文字符集和相关字体也都有cjk标识,下表是Unicode对常用中文的收录情况:<br /><br /><br /><table class="table"><col/><col/><col/><tr><th>字符集</th><th>字数</th><th>Unicode编码</th></tr><tr><td>基本汉字</td><td>20902字</td><td>4E00-9FA5</td></tr><tr><td>基本汉字补充</td><td>38字</td><td>9FA6-9FCB</td></tr><tr><td>扩展A</td><td>6582字</td><td>3400-4DB5</td></tr><tr><td>扩展B</td><td>42711字</td><td>20000-2A6D6</td></tr><tr><td>扩展C</td><td>4149字</td><td>2A700-2B734</td></tr><tr><td>扩展D</td><td>222字</td><td>2B740-2B81D</td></tr><tr><td>康熙部首</td><td>214字</td><td>2F00-2FD5</td></tr><tr><td>部首扩展</td><td>115字</td><td>2E80-2EF3</td></tr><tr><td>兼容汉字</td><td>477字</td><td>F900-FAD9</td></tr><tr><td>兼容扩展</td><td>542字</td><td>2F800-2FA1D</td></tr><tr><td>PUA(GBK)部件</td><td>81字</td><td>E815-E86F</td></tr><tr><td>部件扩展</td><td>452字</td><td>E400-E5E8</td></tr><tr><td>PUA增补</td><td>207字</td><td>E600-E6CF</td></tr><tr><td>汉字笔画</td><td>36字</td><td>31C0-31E3</td></tr><tr><td>汉字结构</td><td>12字</td><td>2FF0-2FFB</td></tr><tr><td>汉语注音</td><td>22字</td><td>3105-3120</td></tr><tr><td>注音扩展</td><td>22字</td><td>31A0-31BA</td></tr><tr><td>〇</td><td>1字</td><td>3007</td></tr></table><br /><br />参考: <a href="https://unicode-table.com/cn/#cjk-unified-ideographs">https://unicode-table.com/cn/#cjk-unified-ideographs</a> <br />有兴趣可以自行搜索阅读相关文章.</div></div>
 </body></html>

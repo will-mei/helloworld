@@ -1,0 +1,51 @@
+<!doctype html><html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>基础补充</title>
+  <meta name="generator" content="CherryTree">
+  <link rel="stylesheet" href="styles.css" type="text/css" />
+</head>
+<body><div class="main"><div class="tree">
+<p><strong>Index</strong></p>
+<p><a href="Shell_Daily.html">Shell Daily</a></p>
+
+<ol>
+<li><a href="Shell_Daily--字符处理工具.html">字符处理工具</a></li>
+<ol>
+<li><a href="Shell_Daily--字符处理工具--基础概念.html">基础概念</a></li>
+<ol>
+<li><a href="Shell_Daily--字符处理工具--基础概念--计量单位.html">计量单位</a></li>
+<li><a href="Shell_Daily--字符处理工具--基础概念--字符集与编码.html">字符集与编码</a></li>
+<ol>
+<li><a href="Shell_Daily--字符处理工具--基础概念--字符集与编码--ASCII字符对照表.html">ASCII字符对照表</a></li>
+<li><a href="Shell_Daily--字符处理工具--基础概念--字符集与编码--汉字的Unicode编码.html">汉字的Unicode编码</a></li>
+</ol>
+<li><a href="Shell_Daily--字符处理工具--基础概念--基础补充.html">基础补充</a></li>
+</ol>
+<li><a href="Shell_Daily--字符处理工具--正则表达式.html">正则表达式</a></li>
+<ol>
+<li><a href="Shell_Daily--字符处理工具--正则表达式--命令中的正则表达式.html">命令中的正则表达式</a></li>
+<li><a href="Shell_Daily--字符处理工具--正则表达式--正则表达式分类.html">正则表达式分类</a></li>
+<li><a href="Shell_Daily--字符处理工具--正则表达式--元字符.html">元字符</a></li>
+<ol>
+<li><a href="Shell_Daily--字符处理工具--正则表达式--元字符--匹配字符.html">匹配字符</a></li>
+<li><a href="Shell_Daily--字符处理工具--正则表达式--元字符--限定符.html">限定符</a></li>
+<li><a href="Shell_Daily--字符处理工具--正则表达式--元字符--定位符.html">定位符</a></li>
+</ol>
+<li><a href="Shell_Daily--字符处理工具--正则表达式--普通字符.html">普通字符</a></li>
+<ol>
+<li><a href="Shell_Daily--字符处理工具--正则表达式--普通字符--非打印字符.html">非打印字符</a></li>
+<li><a href="Shell_Daily--字符处理工具--正则表达式--普通字符--字符簇.html">字符簇</a></li>
+</ol>
+<li><a href="Shell_Daily--字符处理工具--正则表达式--运算优先级.html">运算优先级</a></li>
+<li><a href="Shell_Daily--字符处理工具--正则表达式--常见正则表达式.html">常见正则表达式</a></li>
+</ol>
+<li><a href="Shell_Daily--字符处理工具--基础字符工具01_grep.html">基础字符工具01 grep</a></li>
+<li><a href="Shell_Daily--字符处理工具--基础字符工具02_sed.html">基础字符工具02 sed</a></li>
+<li><a href="Shell_Daily--字符处理工具--基础字符工具03_awk.html">基础字符工具03 awk</a></li>
+<li><a href="Shell_Daily--字符处理工具--其他字符处理工具.html">其他字符处理工具</a></li>
+</ol>
+<li><a href="Shell_Daily--基础shell交互.html">基础shell交互</a></li>
+</ol></div>
+<div class="page"><h1><b><u>基础补充</u></b></h1>补充下面3个概念<br /><br />模式匹配, 流式编辑, 分隔符<br /><br />在linux shell的字符处理工具中大多数情况下我们都是在利用grep,sed等进行模式匹配动作,适当了解它们的工作模式可以帮助我们更好地利用这些工具,并且在阅读文档时也会更容易理解;<br />分隔符是字符处理中的基础而常用的概念,对它们的正确利用往往大大提高处理效率,节省很多精力,这里也很有必要做一下介绍.<br /><br /><strong>关于模式匹配</strong><br />模式匹配是数据结构中字符串的一种基本运算,给定一个子串,要求在某个字符串中找出与该子串相同的所有子串,这就是模式匹配.在常用的字符工具中,经历不断地更新演进,大多已经做了较多的算法优化,比如解决暴力匹配的回溯与降低时间复杂度(如BM算法等),它们非常高效,在shell环境中像awk和sed等都会提供子串匹配的控制命令与函数,运用它们是进行复杂字符处理的必要手段.<br /><br /><strong>流式编辑器</strong><br />流式编辑处理工具是相对批量处理而言,每次都进行小批量计算后立即输出或投递结果,不用每次装入大体积全量数据,每次处理一部分,将大批量任务分摊到每个时间点上,连续小批量的完成处理,数据持续流动,因此利用它们从管道接收输入并按行实时处理十分方便.<br />以sed为例,将文本每次读取一行,这一行被加载到模式空间(可以看做是把读到的内容放到一个操作区),然后sed对这一行内容进行字符串匹配判断,同时完成给定的相应的编辑处理(没有指定则不做编辑),最后输出该行的最终结果,如此往复直到全部文本被处理完成.这样的好处是整体资源消耗比较少,执行非常快捷.<br />了解这些会有一些特别的用处,比如,换行符的处理. sed在处理文本时因为每次读到换行符就完成了一行读取然后去除换行符进行内容处理,当完成后为了前后一致它会在末尾再加上换行符,最后完成一行的输出,按照流式处理方式这个默认动作将被执行到每一行,因此如果直接使用sed对文本的换行符进行处理是不符合sed的处理模式的,这就需要用命令告诉sed进行动作调整,比如在输出之前进行跳转保持加载处理后续内容(当然也可以使用别的工具,比如tr).<br /><br /><strong>行列分隔符</strong><br />linux下大多数的字符处理工具都会根据文本内的分隔符进行分片,通常都是使用空格,制表符,也可以单独指定,根据指定的分隔符,字符处理工具才能判断字符列作为处理单位进行进一步处理,例如按列截取和行列转置等等.<br />在shell中,循环语句也是按照遍历对象的分隔符来进行值的迭代处理的,在内置变量$IFS中存储了当前shell中的分隔符内容,修改它你就可以指定新的分隔符完成特定的迭代动作了(一般不建议使用,使用时请注意先设定OLD_IFS=$IFS进行备份,以便动作完成进行原始值的恢复,否则会干扰shell中后续循环的正常执行).<br />这里提示再一个小细节,前面我们已经了解了字符集和编码,Windows下因为默认编码与linux不同,对于"换行符"的编码也是不一样的,Windows下默认是使用"\n\r"来表示换行的,而Linux下默认是"\n",因为换行符也不可见,这里也需要对跨平台处理的文档即使不是代码文件也请使用的统一编码尽量避免出现此类难以察觉的问题造成意外的错误.</div></div>
+</body></html>

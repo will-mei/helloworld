@@ -14,9 +14,13 @@
 <ol>
 <li><a href="Shell_Daily--字符处理工具--基础概念.html">基础概念</a></li>
 <ol>
-<li><a href="Shell_Daily--字符处理工具--基础概念--字符编码与字符集.html">字符编码与字符集</a></li>
-<li><a href="Shell_Daily--字符处理工具--基础概念--行列与分隔符.html">行列与分隔符</a></li>
-<li><a href="Shell_Daily--字符处理工具--基础概念--模式匹配与流式处理.html">模式匹配与流式处理</a></li>
+<li><a href="Shell_Daily--字符处理工具--基础概念--计量单位.html">计量单位</a></li>
+<li><a href="Shell_Daily--字符处理工具--基础概念--字符集与编码.html">字符集与编码</a></li>
+<ol>
+<li><a href="Shell_Daily--字符处理工具--基础概念--字符集与编码--ASCII字符对照表.html">ASCII字符对照表</a></li>
+<li><a href="Shell_Daily--字符处理工具--基础概念--字符集与编码--汉字的Unicode编码.html">汉字的Unicode编码</a></li>
+</ol>
+<li><a href="Shell_Daily--字符处理工具--基础概念--基础补充.html">基础补充</a></li>
 </ol>
 <li><a href="Shell_Daily--字符处理工具--正则表达式.html">正则表达式</a></li>
 <ol>
@@ -39,8 +43,9 @@
 <li><a href="Shell_Daily--字符处理工具--基础字符工具01_grep.html">基础字符工具01 grep</a></li>
 <li><a href="Shell_Daily--字符处理工具--基础字符工具02_sed.html">基础字符工具02 sed</a></li>
 <li><a href="Shell_Daily--字符处理工具--基础字符工具03_awk.html">基础字符工具03 awk</a></li>
+<li><a href="Shell_Daily--字符处理工具--其他字符处理工具.html">其他字符处理工具</a></li>
 </ol>
 <li><a href="Shell_Daily--基础shell交互.html">基础shell交互</a></li>
 </ol></div>
-<div class="page"><h1><b><u>Shell Daily</u></b></h1><br /><h1>目录</h1><br /><br /><h2>字符处理工具</h2><br /><br />基础概念<br />字符编码<br />常见编码字符集与语言环境<br />行,列,分隔符<br />模式匹配与流式处理<br />正则表达式<br />基础字符工具01 grep<br />基础字符工具02 sed<br />基础字符工具03 awk<br />其他常用字符工具<br /><br /><h2>基础交互</h2><br />命令与别名<br />变量与引用<br />环境变量引用<br />条件检查<br />命令列<br />管道的基本使用(文本传递)<br />输出控制<br />echo输出<br />printf输出<br /><br /><h2>shell解释环境</h2><br />bash环境<br />解释环境调整<br /><br /><h3>脚本代码控制</h3><br />命名与符号<br />注释与缩进<br />调用与拆分<br />进程基本控制<br /><br /><h2>执行流程控制</h2><br /><br /><h3>基础控制语句</h3><br />if语句<br />for循环<br />while循环<br />until循环<br />select语句<br />case语句<br /><br /><h3>函数块</h3><br />内置变量<br />变量生效范围<br />变量传递<br />状态返回<br />管道与定向<br /><br /><h3>shell数据类型</h3><br />数字运算<br />文本展开<br />指数数组使用<br />联合数组使用<br /><br /><h2>多进程控制</h2><br />后台任务<br />进程并发数<br />任务等待<br /><br /><h3>短任务并行</h3><br />匿名管道其他使用<br />管道传递控制<br /><br /><h3>长任务并行</h3><br />有名管道使用<br />管道的缓冲与阻塞<br />文件描述符使用<br />任务重定向<br /><br /><h1>linux系统的初步使用参考</h1><br /><br /><h3>基本进程管理</h3><br />进程信息查询(ps/"/proc/")<br />进程strace<br />linux信号<br /><br /><h3>基础服务配置</h3><br />ssh服务配置<br />sftp服务使用<br />linux网络配置(ip/firewall)<br /><br /><h3>系统基础工具</h3><br />基础服务管理(systemd)<br />基本文件查找(find)<br />文档归与备份<br />lrzsz文件传输<br />其他常用工具<br /><br /><h3>用户终端交互</h3><br />shell配置<br />shell快捷键<br />终端设备与属性支持<br />screen工具<br />tmux工具<br /><br /><h3>vim配置</h3><br />vim基本配置<br />vimplus<br /></div></div>
+<div class="page"><h1><b><u>Shell Daily</u></b></h1><br /><h1>目录</h1><br /><br /><h2>字符处理工具</h2><br /><br />基础概念<br />字符编码<br />常见编码字符集与语言环境<br />模式匹配与流式处理<br />行,列,分隔符<br />正则表达式<br />基础字符工具01 grep<br />基础字符工具02 sed<br />基础字符工具03 awk<br />其他常用字符工具<br /><br /><h2>基础交互</h2><br />命令与别名<br />变量与引用<br />环境变量引用<br />条件检查<br />命令列<br />管道的基本使用(文本传递)<br />输出控制<br />echo输出<br />printf输出<br /><br /><h2>shell解释环境</h2><br />bash环境<br />解释环境调整<br /><br /><h3>脚本代码控制</h3><br />命名与符号<br />注释与缩进<br />调用与拆分<br />进程基本控制<br /><br /><h2>执行流程控制</h2><br /><br /><h3>基础控制语句</h3><br />if语句<br />for循环<br />while循环<br />until循环<br />select语句<br />case语句<br /><br /><h3>函数块</h3><br />内置变量<br />变量生效范围<br />变量传递<br />状态返回<br />管道与定向<br /><br /><h3>shell数据类型</h3><br />数字运算<br />文本展开<br />指数数组使用<br />联合数组使用<br /><br /><h2>多进程控制</h2><br />后台任务<br />进程并发数<br />任务等待<br /><br /><h3>短任务并行</h3><br />匿名管道其他使用<br />管道传递控制<br /><br /><h3>长任务并行</h3><br />有名管道使用<br />管道的缓冲与阻塞<br />文件描述符使用<br />任务重定向<br /><br /><h1>linux系统的初步使用参考</h1><br /><br /><h3>基本进程管理</h3><br />进程信息查询(ps/"/proc/")<br />进程strace<br />linux信号<br /><br /><h3>基础服务配置</h3><br />ssh服务配置<br />sftp服务使用<br />linux网络配置(ip/firewall)<br /><br /><h3>系统基础工具</h3><br />基础服务管理(systemd)<br />基本文件查找(find)<br />文档归与备份<br />lrzsz文件传输<br />其他常用工具<br /><br /><h3>用户终端交互</h3><br />shell配置<br />shell快捷键<br />终端设备与属性支持<br />screen工具<br />tmux工具<br /><br /><h3>vim配置</h3><br />vim基本配置<br />vimplus<br /></div></div>
 </body></html>

@@ -14,9 +14,13 @@
 <ol>
 <li><a href="Shell_Daily--字符处理工具--基础概念.html">基础概念</a></li>
 <ol>
-<li><a href="Shell_Daily--字符处理工具--基础概念--字符编码与字符集.html">字符编码与字符集</a></li>
-<li><a href="Shell_Daily--字符处理工具--基础概念--行列与分隔符.html">行列与分隔符</a></li>
-<li><a href="Shell_Daily--字符处理工具--基础概念--模式匹配与流式处理.html">模式匹配与流式处理</a></li>
+<li><a href="Shell_Daily--字符处理工具--基础概念--计量单位.html">计量单位</a></li>
+<li><a href="Shell_Daily--字符处理工具--基础概念--字符集与编码.html">字符集与编码</a></li>
+<ol>
+<li><a href="Shell_Daily--字符处理工具--基础概念--字符集与编码--ASCII字符对照表.html">ASCII字符对照表</a></li>
+<li><a href="Shell_Daily--字符处理工具--基础概念--字符集与编码--汉字的Unicode编码.html">汉字的Unicode编码</a></li>
+</ol>
+<li><a href="Shell_Daily--字符处理工具--基础概念--基础补充.html">基础补充</a></li>
 </ol>
 <li><a href="Shell_Daily--字符处理工具--正则表达式.html">正则表达式</a></li>
 <ol>
@@ -39,8 +43,9 @@
 <li><a href="Shell_Daily--字符处理工具--基础字符工具01_grep.html">基础字符工具01 grep</a></li>
 <li><a href="Shell_Daily--字符处理工具--基础字符工具02_sed.html">基础字符工具02 sed</a></li>
 <li><a href="Shell_Daily--字符处理工具--基础字符工具03_awk.html">基础字符工具03 awk</a></li>
+<li><a href="Shell_Daily--字符处理工具--其他字符处理工具.html">其他字符处理工具</a></li>
 </ol>
 <li><a href="Shell_Daily--基础shell交互.html">基础shell交互</a></li>
 </ol></div>
-<div class="page"><h1><b><u>正则表达式</u></b></h1>命令行环境下正则表达式是字符处理的必备知识,可以快速匹配文本中的内容,简化命令的输入输出结果.<br /><br /><span style="color:#333333;">正则表达式(regular expression)描述了一种字符串匹配的模式（pattern），可以用来检查一个串是否含有某种子串、将匹配的子串替换或者从某个串中取出符合某个条件的子串等,包括普通字符（例如，a 到 z 之间的字母）和特殊字符（称为"元字符"）。</span><br /><br /><br /><strong>注意</strong>: 在不同的应用程序(grep,sed等)和语言环境(java,python,ruby等)中正则表达式的表示和匹配模式将稍有不同,即使同样的linux系统中,不同的应用程序对于正则表达式的支持也不同.<br /><br />例如,在sed和awk中的正则表达式语法相对较为易于使用,也符合通用习惯,但是grep的表达式支持则比较简单,对于复杂表达式的匹配并不能直接打到想要的结果,有时需要反复转译才能匹配,可以使用grep -E参数或者-P参数使用Perl表达式代替,也可以使用增强版的egrep命令.<br /><br />虽然正则表达式在不同环境的支持不同,但是相互之间大同小异,学习正则表达式关键在于理解常用的匹配模式,并不需要全部记忆,通常在需要时根据需求查询即可.<br /><br />部分表格出处:<br /><a href="http://www.runoob.com/regexp/regexp-intro.html">http://www.runoob.com/regexp/regexp-intro.html</a></div></div>
+<div class="page"><h1><b><u>正则表达式</u></b></h1>命令行环境下正则表达式是字符处理的必备知识,可以快速匹配文本中的内容,简化命令的输入输出结果.<br /><br />正则表达式(regular expression)描述了一种字符串匹配的模式(pattern),可以用来检查一个串是否含有某种子串、将匹配的子串替换或者从某个串中取出符合某个条件的子串等,包括普通字符(例如,a 到 z 之间的字母)和特殊字符(称为"元字符")。<br /><br /><br />注意: 在不同的应用程序(grep,sed等)和语言环境(java,python,ruby等)中正则表达式的表示和匹配模式将稍有不同,即使同样的linux系统中,不同的应用程序对于正则表达式的支持也不同.<br /><br />例如,在sed和awk中的正则表达式语法相对较为易于使用,也符合通用习惯,但是grep的表达式支持则比较简单,对于复杂表达式的匹配并不能直接打到想要的结果,有时需要反复转译才能匹配,可以使用grep -E参数或者-P参数使用Perl表达式代替,也可以使用增强版的egrep命令.<br /><br />虽然正则表达式在不同环境的支持不同,但是相互之间大同小异,学习正则表达式关键在于理解常用的匹配模式,并不需要全部记忆,通常在需要时根据需求查询即可.<br /><br /><br />部分参考表格出处:<br /><a href="http://www.runoob.com/regexp/regexp-intro.html">http://www.runoob.com/regexp/regexp-intro.html</a></div></div>
 </body></html>

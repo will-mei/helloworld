@@ -1,0 +1,53 @@
+<!doctype html><html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>计量单位</title>
+  <meta name="generator" content="CherryTree">
+  <link rel="stylesheet" href="styles.css" type="text/css" />
+</head>
+<body><div class="main"><div class="tree">
+<p><strong>Index</strong></p>
+<p><a href="Shell_Daily.html">Shell Daily</a></p>
+
+<ol>
+<li><a href="Shell_Daily--字符处理工具.html">字符处理工具</a></li>
+<ol>
+<li><a href="Shell_Daily--字符处理工具--基础概念.html">基础概念</a></li>
+<ol>
+<li><a href="Shell_Daily--字符处理工具--基础概念--计量单位.html">计量单位</a></li>
+<li><a href="Shell_Daily--字符处理工具--基础概念--字符集与编码.html">字符集与编码</a></li>
+<ol>
+<li><a href="Shell_Daily--字符处理工具--基础概念--字符集与编码--ASCII字符对照表.html">ASCII字符对照表</a></li>
+<li><a href="Shell_Daily--字符处理工具--基础概念--字符集与编码--汉字的Unicode编码.html">汉字的Unicode编码</a></li>
+</ol>
+<li><a href="Shell_Daily--字符处理工具--基础概念--基础补充.html">基础补充</a></li>
+</ol>
+<li><a href="Shell_Daily--字符处理工具--正则表达式.html">正则表达式</a></li>
+<ol>
+<li><a href="Shell_Daily--字符处理工具--正则表达式--命令中的正则表达式.html">命令中的正则表达式</a></li>
+<li><a href="Shell_Daily--字符处理工具--正则表达式--正则表达式分类.html">正则表达式分类</a></li>
+<li><a href="Shell_Daily--字符处理工具--正则表达式--元字符.html">元字符</a></li>
+<ol>
+<li><a href="Shell_Daily--字符处理工具--正则表达式--元字符--匹配字符.html">匹配字符</a></li>
+<li><a href="Shell_Daily--字符处理工具--正则表达式--元字符--限定符.html">限定符</a></li>
+<li><a href="Shell_Daily--字符处理工具--正则表达式--元字符--定位符.html">定位符</a></li>
+</ol>
+<li><a href="Shell_Daily--字符处理工具--正则表达式--普通字符.html">普通字符</a></li>
+<ol>
+<li><a href="Shell_Daily--字符处理工具--正则表达式--普通字符--非打印字符.html">非打印字符</a></li>
+<li><a href="Shell_Daily--字符处理工具--正则表达式--普通字符--字符簇.html">字符簇</a></li>
+</ol>
+<li><a href="Shell_Daily--字符处理工具--正则表达式--运算优先级.html">运算优先级</a></li>
+<li><a href="Shell_Daily--字符处理工具--正则表达式--常见正则表达式.html">常见正则表达式</a></li>
+</ol>
+<li><a href="Shell_Daily--字符处理工具--基础字符工具01_grep.html">基础字符工具01 grep</a></li>
+<li><a href="Shell_Daily--字符处理工具--基础字符工具02_sed.html">基础字符工具02 sed</a></li>
+<li><a href="Shell_Daily--字符处理工具--基础字符工具03_awk.html">基础字符工具03 awk</a></li>
+<li><a href="Shell_Daily--字符处理工具--其他字符处理工具.html">其他字符处理工具</a></li>
+</ol>
+<li><a href="Shell_Daily--基础shell交互.html">基础shell交互</a></li>
+</ol></div>
+<div class="page"><h1><b><u>计量单位</u></b></h1>为了了解字符编码我们附带明确一下计算机的一些计量单位,以免后面带来混淆.<br /><br />计算机中的数据都是以0和1来表示的,其中一个0或者一个1称之为一位,它的英文是Bit. 8位称为一个字节(Byte).<br /><br />字节的换算(请注意, byte缩写时B大写, 中间的):<br />1 B/byte(字节) = 8 bit(比特)<br />1 KiB(千字节) = 1024 B/byte(字节) <br />1 MiB = 1024 KiB <br />1 GiB = 1024 MiB <br />1TiB =1024 GiB <br />1 PiB = 1024 TiB <br />1 EiB = 1024 PiB<br /><br />比特和位<br />比特和位实际上是同一个东西,计算机只能处理二进制数据流,二进制的0或1就代表一个位。计算机中的32/64位指计算机的cpu一次能处理的最大位数。8字节等于64位,也就是说64位cpu可以一次处理8个字节的数据。<br /><br />k与 Ki<br />k 与 Ki 分别表示 kilo-（十进制千） 与 kibi-（二进制千）, "i"取自binary, 表示二进制幂的计数方法. <br />作为前缀使用时, k 表示 1,000，Ki 表示1024，因为"Ki"来源于它在计算机方面 2^10 = 1,024 的使用。<br />Kibibyte是一种资讯计量单位, 代表1024字节，即2^10字节，一般简称为KiB。Kibibyte是来自英文 kilo binary byte 的缩写，意思为"千位二进制字节"。<br />不幸的是，人们常常错误地用 K 代替 Ki。<br /><br />b与B<br />比特/位是最小的数值单位, 用小写b表示, 即bit(位); 大写B表示byte, 即字节, 一个字节＝八个位, 即1B＝8b; 两个字节称为一个字/Word(双字节),4个字节称为双字/Dword(四字节); <br />kb 表示千个位，KiB 表示千个(二进制)字节。表示文件的大小单位一般都使用字节（KiB）。<br /><br /><table class="table"><col/><col/><col/><tr><th>十进制前缀
+(SI)</th><th></th><th></th></tr><tr><td>名字</td><td>缩写</td><td>次方</td></tr><tr><td>千字节</td><td>KB</td><td>10^3</td></tr><tr><td>兆字节</td><td>MB</td><td>10^6</td></tr><tr><td>吉字节</td><td>GB</td><td>10^9</td></tr><tr><td>太字节</td><td>TB</td><td>10^12</td></tr><tr><td>拍字节</td><td>PB</td><td>10^15</td></tr><tr><td>艾字节</td><td>EB</td><td>10^18</td></tr><tr><td>泽字节</td><td>ZB</td><td>10^21</td></tr><tr><td>尧字节</td><td>YB</td><td>10^24</td></tr></table>  <table class="table"><col/><col/><col/><tr><th>二进制前缀
+(IEC 60027-2)</th><th></th><th></th></tr><tr><td>名字</td><td>缩写</td><td>次方</td></tr><tr><td>kibibyte</td><td>KiB</td><td>2^10</td></tr><tr><td>mebibyte</td><td>MiB</td><td>2^20</td></tr><tr><td>gibibyte</td><td>GiB</td><td>2^30</td></tr><tr><td>tebibyte</td><td>TiB</td><td>2^40</td></tr><tr><td>pebibyte</td><td>PiB</td><td>2^50</td></tr><tr><td>exbibyte</td><td>EiB</td><td>2^60</td></tr><tr><td>zebibyte</td><td>ZiB</td><td>2^70</td></tr><tr><td>yobibyte</td><td>YiB</td><td>2^80</td></tr></table><br /><br />通常的情况下, 带宽用bit, 网速用byte.<br />通讯领域说的1K，是指1000，比如8KHz，就是8000Hz。<br />IT领域说的1K，是指1024，蔽日1K内存，就是1024byte内存。<br />生活中的1K, 则要看上下文, 比如工资30K+, 代表3万以上.<br /><br />其实, 生活中很多时候他们都是混用的,并且没用声明的情况下有时还能通用.<br />为什么这样呢?<br />没有为什么,都怪我们当初没有去制定这些个标准,¯\_(ツ)_/¯<br /><br />1998年, 国际电工委员会(IEC)介绍了二进制乘数词头"kibi-", "mebi-", "gibi-", "tebi-", "pebi-", "exbi-", 作为二进制乘幂的计数方法。1999年公布了 修正2:"IEC 60027-2:电工技术应用的字母符号标准--第二部分:通信和电子 的内容, 有兴趣可以自行查阅.<br /></div></div>
+</body></html>
